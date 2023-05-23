@@ -1,0 +1,20 @@
+npm cache clean --force
+npx react-native init PeliculasApp --template react-native-template-typescript
+yarn add @react-navigation/native
+yarn add react-native-screens react-native-safe-area-context
+public class MainActivity extends ReactActivity {
+  // import android.os.Bundle;
+  @Override
+  protected void onCreate(Bundle savedInstanceState) {
+    super.onCreate(null);
+  }
+  // ...
+}
+yarn add @react-navigation/stack
+yarn add react-native-gesture-handler
+import 'react-native-gesture-handler';//en el index
+yarn add @react-native-masked-view/masked-view
+
+//CARUSEL
+import Carousel from 'react-native-anchor-carousel';
+$ npm install --save react-native-anchor-carousel
