@@ -1,14 +1,15 @@
+/* eslint-disable react-native/no-inline-styles */
 /* eslint-disable prettier/prettier */
 import { StackScreenProps } from '@react-navigation/stack';
 import React from 'react';
 import { Image, Text, View, StyleSheet, Dimensions, ActivityIndicator } from 'react-native';
-import { ScrollView, TouchableOpacity } from 'react-native-gesture-handler';
+import { ScrollView } from 'react-native-gesture-handler';
 import { RootStackParams } from '../navigation/Navigation';
 
 import { useMovieDetails } from '../hooks/useMovieDetails';
 import { MovieDetails } from '../components/MovieDetails';
-import Icon from 'react-native-vector-icons/Ionicons';
-
+//import Icon from 'react-native-vector-icons/Ionicons';
+ 
 const screenHeight = Dimensions.get('screen').height;
 
 
@@ -45,19 +46,15 @@ export const DetailScreen = ( { route, navigation }: Props ) => {
                     : <MovieDetails movieFull={ movieFull! } cast={ cast } />
             }
 
-            {/* Boton para cerrar */}
+            {/* Boton para cerrar 
             <View style={ styles.backButton }>
                 <TouchableOpacity
                     onPress={() => navigation.pop() }
-                >
-                    <Icon
-                        color="white"
-                        name="arrow-back-outline"
-                        size={ 60 }
-                    />
+                > 
+                   <Icon name="ios-book" color="#4F8EF7" size = {50} />
                 </TouchableOpacity>
             </View>
-
+            */}
         </ScrollView>
     );
 };
